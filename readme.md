@@ -1,5 +1,6 @@
-This is a mess.  TODO: Turn it into a `def cyclic_noise` function.  
-It generates cyclic/repeating/perfect loop noise by low-pass filtering
+[This is a mess.  TODO: Turn it into a `def cyclic_noise` function.]
+
+This generates cyclic/repeating/perfect loop noise by low-pass filtering
 white noise in a cyclic way.  Useful for "random" but looping animations, etc.:
 
 This one loops in both space and time, for instance:
@@ -11,3 +12,9 @@ Simplex noise typically has a more trapezoidal value distribution:
 https://github.com/lmas/opensimplex/issues/18#issuecomment-796367121
 
 which could be emulated by stretching the sample values.
+
+Other examples:
+
+* https://i.imgur.com/NGjfoOD.mp4
+* https://i.imgur.com/eFES1QO.mp4
+* https://i.imgur.com/MXWKOi6.png
