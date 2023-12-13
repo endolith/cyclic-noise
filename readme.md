@@ -1,5 +1,3 @@
-[This is a mess.  TODO: Turn it into a `def cyclic_noise` function.]
-
 This generates cyclic/repeating/perfect loop noise by low-pass filtering
 white noise in a cyclic way.  Useful for "random" but looping animations, etc.:
 
@@ -18,3 +16,5 @@ Other examples:
 * https://i.imgur.com/NGjfoOD.mp4
 * https://i.imgur.com/eFES1QO.mp4
 * https://i.imgur.com/MXWKOi6.png
+
+[This code is a mess.  TODO: Turn it into a `def cyclic_noise` function.]
