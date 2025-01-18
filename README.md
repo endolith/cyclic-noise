@@ -1,4 +1,5 @@
 # cyclic-noise
+
 Low-pass filtered cyclic noise (alternative to Perlin/simplex noise)
 
 This generates cyclic/repeating/perfect loop noise by low-pass filtering
@@ -10,14 +11,14 @@ This one loops in both space and time, for instance:
 
 Simplex noise typically has a more trapezoidal value distribution:
 
-https://github.com/lmas/opensimplex/issues/18#issuecomment-796367121
+<https://github.com/lmas/opensimplex/issues/18#issuecomment-796367121>
 
 which could be emulated by stretching the sample values.
 
 Other examples:
 
-* https://i.imgur.com/NGjfoOD.mp4
-* https://i.imgur.com/eFES1QO.mp4
-* https://i.imgur.com/MXWKOi6.png
+* <https://i.imgur.com/NGjfoOD.mp4>
+* <https://i.imgur.com/eFES1QO.mp4>
+* <https://i.imgur.com/MXWKOi6.png>
 
 [This code is a mess.  TODO: Turn it into a `def cyclic_noise` function.]
