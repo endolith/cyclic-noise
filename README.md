@@ -21,4 +21,14 @@ Other examples:
 * <https://i.imgur.com/eFES1QO.mp4>
 * <https://i.imgur.com/MXWKOi6.png>
 
-[This code is a mess.  TODO: Turn it into a `def cyclic_noise` function.]
+## Usage
+
+Install dependencies (for example `pip install numpy scipy`), then:
+
+```python
+from cyclic_noise import cyclic_noise
+
+volume = cyclic_noise((64, 64, 64), sigma=7.0, seed=0)
+```
+
+Optional: pass your own `numpy.random.Generator` as `rng`, or tune `order` and `truncate` (see SciPy’s `gaussian_filter`). Run `python cyclic_noise.py` for the matplotlib demo (requires `matplotlib`).
