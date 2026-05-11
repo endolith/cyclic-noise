@@ -23,7 +23,17 @@ Other examples:
 
 ## Usage
 
-Install dependencies (for example `pip install numpy scipy`), then:
+Install from the project root with [pip](https://pip.pypa.io/) (or any PEP 517 frontend, for example `uv pip`):
+
+```bash
+pip install .
+```
+
+For the optional matplotlib demo (`python cyclic_noise.py`):
+
+```bash
+pip install ".[demo]"
+```
 
 ```python
 from cyclic_noise import cyclic_noise
@@ -31,4 +41,6 @@ from cyclic_noise import cyclic_noise
 volume = cyclic_noise((64, 64, 64), sigma=7.0, seed=0)
 ```
 
-Optional: pass your own `numpy.random.Generator` as `rng`, or tune `order` and `truncate` (see SciPy’s `gaussian_filter`). Run `python cyclic_noise.py` for the matplotlib demo (requires `matplotlib`).
+Optional: pass your own `numpy.random.Generator` as `rng`, or tune `order` and `truncate` (see SciPy’s `gaussian_filter`).
+
+Build artifacts: `pip install build && python -m build` (uses [Hatchling](https://github.com/pypa/hatch) per `pyproject.toml`).
