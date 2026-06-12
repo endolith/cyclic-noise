@@ -31,11 +31,17 @@ dependencies = [
 demo = [
     "matplotlib>=3.3",
 ]
+test = [
+    "pytest>=7.0",
+]
 
 [project.urls]
 Homepage = "https://github.com/endolith/cyclic-noise"
 Repository = "https://github.com/endolith/cyclic-noise"
 Issues = "https://github.com/endolith/cyclic-noise/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [tool.hatch.build]
 dev-mode-dirs = ["."]
@@ -49,4 +55,5 @@ include = [
     "/README.md",
     "/LICENSE",
     "/pyproject.toml",
+    "/tests",
 ]

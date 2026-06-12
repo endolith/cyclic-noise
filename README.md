@@ -43,4 +43,11 @@ volume = cyclic_noise((64, 64, 64), sigma=7.0, seed=0)
 
 Optional: pass your own `numpy.random.Generator` as `rng`, or tune `order` and `truncate` (see SciPy’s `gaussian_filter`).
 
+Run tests after installing test dependencies:
+
+```bash
+pip install ".[test]"
+pytest
+```
+
 Build artifacts: `pip install build && python -m build` (uses [Hatchling](https://github.com/pypa/hatch) per `pyproject.toml`).
